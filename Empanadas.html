@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Empanadas.css">
+  <title>Empanadas</title>
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <header style="text-align:center">
+      <h1 style="font-size: 70px;">The Best Empanadas In Guayaquil</h1>
+      <p style="font-size: 40px;">Various Flavor, contact us</p>
+    </header>
+
+    <!-- Empanadas Section -->
+    <div class="container">
+      <div class="row">
+        <div class="column-66">
+          <h1 class="xlarge-font"><b>Empanadas</b></h1>
+          <h1 class="large-font" style="color:powderblue;">The Best Flavor Ever!</h1>
+          <p><span style="font-size:36px">Are you looking for Amazing Empanadas?</span></p>
+          <p>Una empanada es una fina masa de pan, masa quebrada u hojaldre rellena con una preparación salada o dulce y cocida al horno, frita o al horno.</p>
+        </div>
+        <div class="column-33">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Empanadas_salte%C3%B1as.jpg/375px-Empanadas_salte%C3%B1as.jpg" width="335" height="471">
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <div class="row">
+        <div class="column-33">
+          <img src="https://pinaenlacocina.com/wp-content/uploads/2018/06/043-1.jpg" width="335" height="471">
+        </div>
+        <div class="column-66">
+          <h1 class="xlarge-font"><b>Empanadas</b></h1>
+          <h1 class="large-font" style="color:powderblue;">The Best Flavor Ever!</h1>
+          <p><span style="font-size:36px">Are you looking for Amazing Empanadas?</span></p>
+          <p>Una empanada es una fina masa de pan, masa quebrada u hojaldre rellena con una preparación salada o dulce y cocida al horno, frita o al horno.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="column-33">
+        <h1 class="xlarge-font"><b>How to find..</b></h1>
+        <h1 class="large-font" style="color:powderblue;">Guyaquil University</h1>
+        <p><span style="font-size:36px">14 y Maldonado, Guayaquil, Ecuador</span></p>
+      </div>
+      <div class="column-66">
+        <img src="http://www.lonelyplanet.com/maps/south-america/ecuador/guayaquil/map_of_guayaquil.jpg" width="800" height="471">
+      </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+  <script type="text/javascript">
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
